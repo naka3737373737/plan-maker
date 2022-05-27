@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Plan Maker</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- fontawesome -->
+    <%= stylesheet_link_tag  'https://use.fontawesome.com/releases/v5.9.0/css/all.css'%>
+ 
   </head>
 
   <body>
+        <!--headerここから-->
+        <header>
+          <h1>
+              <%= link_to '/' do%>
+                  <%= image_tag 'logo.png' %>
+              <% end %>
+          </h1>
+          <div id="newLink">
+              <%= link_to '/plans/new', class: 'btn btn-c' do%>
+                  <i class="fas fa-plus"></i>しおりを作る
+              <% end %>
+          </div>
+      </header>
+      <!--headerここまで-->
     <%= yield %>
   </body>
 </html>
