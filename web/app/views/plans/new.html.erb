@@ -1,2 +1,7 @@
-<h1>Plans#new</h1>
-<p>Find me in app/views/plans/new.html.erb</p>
+<h1>新規予定</h1>
+<%= form_for @plan do |f| %>
+<%= f.text_area :title, required: true %> 
+<%= f.text_area :description %>  
+<%= f.date_field :date %> 
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,17 @@
+ja:
+  enums:
+    plan:
+      plan_types:
+        male: 男
+        female: 女
+        '---': '---'
+        sightseeing: 観光
+        experience: 体験
+        meal: 食事
+        staying: 宿泊
+        shopping: ショッピング
+        car: 車
+        bus: バス
+        train: 電車
+        airplane: 飛行機
+        walk: 徒歩

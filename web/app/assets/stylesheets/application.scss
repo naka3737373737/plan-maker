@@ -40,6 +40,10 @@ header{
       color: #fff;
       background-color: #55B3D9;
       text-decoration: none;
+      &:hover {
+        color: #fff;
+        background: #84C9D9;
+      }
     }
     a.btn-c {
       font-size: 1.1rem;
